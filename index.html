@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>YUKINA FAN CLUB</title>
+  <style>
+    .blue-date {
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #4285F4;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+      background-color: #ffffff;
+    }
+
+    section {
+      margin-bottom: 20px;
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+      padding: 10px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      padding: 0;
+      color: #4285F4;
+    }
+
+    .person img {
+      width: 480px;
+      height: 270px;
+    }
+
+    /* PC用 */
+    img {
+      width: 50%; /* 画像を親要素の幅に合わせる */
+      height: auto; /* 高さを自動調整 */
+    }
+
+    /* モバイル */
+    @media (max-width: 480px) {
+      img {
+        max-width: 100%; /* 画像の最大幅を制限 */
+      }
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        max-width: 100%;
+        padding: 10px;
+      }
+    }
+
+    /* 追加スタイル */
+    html,
+    body {
+      height: 100%;
+      background-color: #ffffff; /* 背景色を #ffffff（真っ白）に設定 */
+    }
+
+    #news {
+      height: calc(100% - 220px); /* 画面の高さからヘッダーとフッターの高さを引いた値 */
+      overflow-y: scroll; /* スクロールバーを表示 */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#news">ニュース</a></li>
+        <li><a href="#form">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <main>
+      <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <img src="images/YUKINA.gif" alt="YUKINA">
+      </div>
+      <img src="images/ニュース.gif" alt="ニュース">
+      <section id="news">
+        <p>
+          <p class="blue-date">2023年 6/27  </p>  ましゅ信のアニメ制作決定！！</p>
+          <p class="blue-date">2023年 6/14  </p>  ましゅ信の小説作成！</p>
+        </p>
+      </section>
+      <img src="images/お問い合わせ.gif" alt="YUKINA">
+<section id="form">
+    <ul>
+        <li><a href="form.html" style="color: #004d80;">お問い合わせフォームはコチラ</a></li>
+      </ul>
+</section>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </main>
+  </section>
+</body>
+
+</html>
